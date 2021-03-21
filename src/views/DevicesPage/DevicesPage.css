@@ -12,9 +12,10 @@ tr {
 }
 
 tbody > tr {
-  height: 70px;
-  line-height: 70px;
+  height: 40px;
+  line-height: 40px;
   cursor: pointer;
+  border-bottom: 1px solid lightgray;
 }
 
 tbody > tr:first-child {

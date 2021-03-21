@@ -25,12 +25,12 @@ const DevicesPage = () => {
     }
   });
 
-  function handleChangePage (event) {
+  function handleChangePage (event, page) {
     setState({
-      ...state,
-      page: event.target.value,
+      page: page,
+      rowsPerPage: state.rowsPerPage,
     });
-    getDevices(state.page, state.rowsPerPage);
+    getDevices(page, state.rowsPerPage);
   }
 
   function handleChangeRowsPerPage (event) {
@@ -38,7 +38,7 @@ const DevicesPage = () => {
       ...state,
       rowsPerPage: event.target.value,
     });
-    getDevices(state.page, state.rowsPerPage);
+    getDevices(state.page, event.target.value);
   }
 
   function getStatusChip (isOnline) {
