@@ -1,0 +1,11 @@
+.app-logo {
+  height: 50px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  margin-right: 10px;
+}

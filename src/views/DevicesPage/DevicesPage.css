@@ -1,0 +1,26 @@
+.devices-page {
+  margin: 40px;
+}
+
+.devices-page__table {
+  background-color: white;
+}
+
+tr {
+  height: 40px;
+  line-height: 40px;
+}
+
+tbody > tr {
+  height: 70px;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+tbody > tr:first-child {
+  border-top: 1px solid lightgray;
+}
+
+.badge {
+  font-size: 13px;
+}
