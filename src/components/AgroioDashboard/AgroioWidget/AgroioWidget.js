@@ -6,7 +6,7 @@ import "./AgroioWidget.css";
 const AgroioWidget = (props) => {
   const DynamicComponent = props.componentsMap[props.config.component];
   return (
-    <Card>
+    <Card className="agroio-card">
       <Card.Title>
         <div className="m-3">
           {props.config.widgetTitle}

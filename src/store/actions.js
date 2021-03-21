@@ -13,7 +13,7 @@ export const login = (userInfo)  => {
     .then(res => {
       store.dispatch({ type: LOGIN, payload: { accessToken: res.data.accessToken }});
       localStorage.setItem("agroioToken", res.data.accessToken);
-      history.push("/devices");
+      history.push("/dashboard");
     })
     .catch(() => {
       store.dispatch({ type: LOGIN_ERROR });
